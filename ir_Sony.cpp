@@ -57,12 +57,7 @@ long  IRrecv::decodeSony (decode_results *results)
 		// Serial.print("IR Gap found: ");
 		results->bits = 0;
 		results->value = REPEAT;
-
-#	ifdef DECODE_SANYO
-		results->decode_type = SANYO;
-#	else
-		results->decode_type = UNKNOWN;
-#	endif
+		results->decode_type = SONY;
 
 	    return true;
 	}
