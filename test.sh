@@ -12,3 +12,4 @@ PLATFORMIO_CI_SRC=examples/JVCPanasonicSendDemo python2 -m platformio ci --lib="
 PLATFORMIO_CI_SRC=examples/LGACSendDemo python2 -m platformio ci --lib="." --board=uno
 PLATFORMIO_CI_SRC=examples/LegoPowerFunctionsSendDemo python2 -m platformio ci --lib="." --board=uno
 PLATFORMIO_CI_SRC=examples/LegoPowerFunctionsTests python2 -m platformio ci --lib="." --board=uno
+
