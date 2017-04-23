@@ -6,7 +6,7 @@
  * http://arcfn.com
  */
 
-#include "IRremote.h"
+#include "InfraredRemote.h"
 
 #define POWER 0x7F80
 #define AIWA_RC_T501

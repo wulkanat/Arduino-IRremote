@@ -17,7 +17,7 @@
 	void  mark        (int t)     { printf("+%d," , t); }
 	void  space       (int t)     { printf("-%d, ", t); }
 #else
-#	include "IRremote.h"
+#	include "InfraredRemote.h"
 #endif // TEST
 
 //+=============================================================================
@@ -238,7 +238,7 @@ int  main ( )
 #include <stdio.h>
 
 #define IRPRONTO
-#include "IRremoteInt.h"  // The Arduino IRremote library defines USECPERTICK
+#include "lib/InfraredRemoteInt.h"  // The Arduino IRremote library defines USECPERTICK
 
 //------------------------------------------------------------------------------
 // Source: https://www.google.co.uk/search?q=DENON+MASTER+IR+Hex+Command+Sheet

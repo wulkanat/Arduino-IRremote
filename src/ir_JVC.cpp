@@ -1,5 +1,5 @@
-#include "IRremote.h"
-#include "IRremoteInt.h"
+#include "InfraredRemote.h"
+#include "lib/InfraredRemoteInt.h"
 
 //==============================================================================
 //                             JJJJJ  V   V   CCCC

@@ -1,5 +1,5 @@
-#include "IRremote.h"
-#include "IRremoteInt.h"
+#include "InfraredRemote.h"
+#include "lib/InfraredRemoteInt.h"
 
 #ifdef IR_TIMER_USE_ESP32
 hw_timer_t *timer;
