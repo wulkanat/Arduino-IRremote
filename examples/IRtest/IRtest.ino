@@ -9,7 +9,7 @@
  * the arduino IDE.
  */
 
-#include <IRremote.h>
+#include <InfraredRemote.h>
 #include <IRremoteInt.h>
 
 // Dumps out the decode_results structure.

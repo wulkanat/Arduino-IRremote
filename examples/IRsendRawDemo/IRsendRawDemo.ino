@@ -18,7 +18,7 @@
  */
 
 
-#include <IRremote.h>
+#include <InfraredRemote.h>
 
 IRsend irsend;
 

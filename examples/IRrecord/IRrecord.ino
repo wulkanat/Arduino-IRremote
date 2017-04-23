@@ -15,7 +15,7 @@
  * http://arcfn.com
  */
 
-#include <IRremote.h>
+#include <InfraredRemote.h>
 
 int RECV_PIN = 11;
 int BUTTON_PIN = 12;

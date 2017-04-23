@@ -3,7 +3,7 @@
  * Copyright (c) 2016 Philipp Henkel
  */
 
-#include <IRremote.h>
+#include <InfraredRemote.h>
 #include <IRremoteInt.h>
 
 IRsend irsend;

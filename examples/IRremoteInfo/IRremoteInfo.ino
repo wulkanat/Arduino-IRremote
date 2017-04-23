@@ -11,7 +11,7 @@
  */
 
 
-#include <IRremote.h>
+#include <InfraredRemote.h>
 
 void setup()
 {

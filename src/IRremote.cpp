@@ -20,8 +20,8 @@
 
 // Defining IR_GLOBAL here allows us to declare the instantiation of global variables
 #define IR_GLOBAL
-#	include "IRremote.h"
-#	include "IRremoteInt.h"
+#	include "InfraredRemote.h"
+#	include "lib/InfraredRemoteInt.h"
 #undef IR_GLOBAL
 
 #ifndef IR_TIMER_USE_ESP32

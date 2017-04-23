@@ -1,4 +1,4 @@
-#include <IRremote.h>
+#include <InfraredRemote.h>
 #include <Wire.h>
 
 
