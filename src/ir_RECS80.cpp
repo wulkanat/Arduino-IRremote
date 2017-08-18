@@ -7,6 +7,7 @@
 #define RECS80_MARK 158
 #define RECS80_ONE_SPACE 7426
 #define RECS80_ZERO_SPACE 4898 
+
 #if SEND_RECS80
 
 void IRsend::sendRECS80 (uint8_t address, uint8_t address_nbit, uint8_t command, uint8_t command_nbit) {
@@ -27,7 +28,7 @@ void IRsend::sendRECS80 (uint8_t address, uint8_t address_nbit, uint8_t command,
     if (address & mask) {
       space(RECS80_ONE_SPACE);
     } else {
-      space(RECS80_ONE_ZERO);
+      space(RECS80_ZERO_SPACE);
     }
 
   }
@@ -39,7 +40,7 @@ void IRsend::sendRECS80 (uint8_t address, uint8_t address_nbit, uint8_t command,
     if (command & mask) {
       space(RECS80_ONE_SPACE);
     } else {
-      space(RECS80_ONE_ZERO);
+      space(RECS80_ZERO_SPACE);
     }
 
   }

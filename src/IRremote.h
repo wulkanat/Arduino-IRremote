@@ -79,6 +79,9 @@
 #define DECODE_LEGO_PF       0 // NOT WRITTEN
 #define SEND_LEGO_PF         1
 
+#define DECODE_RECS80        0 // NOT WRITTEN
+#define SEND_RECS80          1 // Still being tested
+
 //------------------------------------------------------------------------------
 // When sending a Pronto code we request to send either the "once" code
 //                                                   or the "repeat" code
@@ -349,6 +352,10 @@ class IRsend
 //......................................................................
 #		if SEND_LEGO_PF
 			void  sendLegoPowerFunctions (uint16_t data, bool repeat = true) ;
+#		endif
+		//......................................................................
+#		if SEND_RECS80
+			void  sendRECS80 (uint8_t address, uint8_t address_nbit, uint8_t command, uint8_t command_nbit) ;
 #		endif
 
 #ifdef USE_SOFT_CARRIER
