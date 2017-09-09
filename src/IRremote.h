@@ -79,7 +79,7 @@
 #define DECODE_LEGO_PF       0 // NOT WRITTEN
 #define SEND_LEGO_PF         1
 
-#define DECODE_RECS80        0 // NOT WRITTEN
+#define DECODE_RECS80        1 // NOT WRITTEN
 #define SEND_RECS80          1 // Still being tested
 
 //------------------------------------------------------------------------------
@@ -122,13 +122,14 @@ typedef
 		DENON,
 		PRONTO,
 		LEGO_PF,
+		RECS80,
 	}
 decode_type_t;
 
 //------------------------------------------------------------------------------
 // Set DEBUG to 1 for lots of lovely debug output
 //
-#define DEBUG  0
+#define DEBUG 0
 
 //------------------------------------------------------------------------------
 // Debug directives
@@ -254,6 +255,10 @@ class IRrecv
 #		if DECODE_LEGO_PF
 			bool  decodeLegoPowerFunctions (decode_results *results) ;
 #		endif
+
+#		if DECODE_RECS80
+		    bool decodeRECS80(decode_results *results);
+#		endif
 } ;
 
 //------------------------------------------------------------------------------
@@ -355,7 +360,7 @@ class IRsend
 #		endif
 		//......................................................................
 #		if SEND_RECS80
-			void  sendRECS80 (uint8_t address, uint8_t address_nbit, uint8_t command, uint8_t command_nbit) ;
+			void  sendRECS80 (uint16_t data) ;
 #		endif
 
 #ifdef USE_SOFT_CARRIER
