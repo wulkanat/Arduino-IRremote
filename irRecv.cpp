@@ -89,6 +89,11 @@ int  IRrecv::decode (decode_results *results)
 	DBG_PRINTLN("Attempting Lego Power Functions");
 	if (decodeLegoPowerFunctions(results))  return true ;
 #endif
+	
+#if DECODE_NERF_LOP
+	DBG_PRINTLN("Attempting Nerf Laser Ops Pro Functions");
+	if (decodeNerfLOP(results))  return true ;
+#endif
 
 	// decodeHash returns a hash on any input.
 	// Thus, it needs to be last in the list.
